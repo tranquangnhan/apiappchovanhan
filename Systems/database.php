@@ -12,6 +12,7 @@ class Model_db{
                 (
                     PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'",
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                 );
     
             $conn = new PDO ('mysql:host='.HOST_DB.';dbname='.NAME_DB.';charset=utf8', USER_DB, PASS_DB, $ConnectionOption);
