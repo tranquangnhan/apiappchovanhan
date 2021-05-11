@@ -4,7 +4,7 @@ namespace Systems;
 use PDO;
 use PDOException;
 
-class Model_db{
+class ModelDb{
 
     function __construct(){
         try {
